@@ -37,6 +37,7 @@ def list(songs)
 songs.each do |song|
   puts "#{songs.index(song)+1}. #{song}"
 end
+end
 
 def exit_jukebox
 
