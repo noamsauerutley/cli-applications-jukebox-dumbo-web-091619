@@ -40,6 +40,8 @@ def list(songs)
 end
 
 def exit_jukebox
+  input = gets.strip
+  if input = "exit"
   puts "Goodbye"
 end
 
