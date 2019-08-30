@@ -40,14 +40,18 @@ def list(songs)
 end
 
 def exit_jukebox
-  input = gets.strip
-  if input = "exit"
   puts "Goodbye"
 end
 
 def run(songs)
   help
+  input = gets.downcase.strip
+  if input == "help"
+    help
+  elsif input == "play"
   play(songs)
   list(songs)
-  exit_jukebox
+  if input == "exit"
+    exit_jukebox
+  end
 end
