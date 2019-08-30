@@ -42,8 +42,3 @@ end
 def exit_jukebox
   puts "Goodbye"
 end
-
-help
-play(songs)
-list(songs)
-exit_jukebox
