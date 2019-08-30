@@ -45,12 +45,13 @@ end
 
 def run(songs)
   help
-  input = gets.downcase.strip
+  input = gets.strip
   if input == "help"
     help
   elsif input == "play"
-  play(songs)
-  list(songs)
+    play(songs)
+  elsif input == "list"
+    list(songs)
   if input == "exit"
     exit_jukebox
   end
