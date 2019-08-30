@@ -20,14 +20,14 @@ puts "- exit : exits this program"
 end
 
 def play(songs)
-  print "Please enter a song name or number:"
+  puts "Please enter a song name or number:"
   input = gets.chomp
   if songs.include?(input)
-    print "Playing #{input}"
+    puts "Playing #{input}"
   elsif (1..9).include?(input.to_i)
-    print "#{songs[input.to_i-1]}"
+    puts "#{songs[input.to_i-1]}"
   else
-    print "Invalid input, please try again"
+    puts "Invalid input, please try again"
   end
 end
 
