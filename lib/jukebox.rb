@@ -40,6 +40,5 @@ def list(songs)
 end
 
 def exit_jukebox
-  break
 puts "Goodbye"
 end
